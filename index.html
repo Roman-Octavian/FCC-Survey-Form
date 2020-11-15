@@ -7,19 +7,22 @@
   </head>
   <body>
     <h1 id="title">Computer Survey Form</h1>
-    <p id="description">This form will help us understand your preferences in terms of computers and it will allow us to make recommendations based on said preferences.</p>
+    <p id="description">Please complete this form to help us display more relevant personalized advertisements on your feed.</p>
     <form id="survey-form">
+    <div id="name-text">
       <label id="name-label" for="name">What is your name?</label>
         <input type="text" id="name" placeholder="e.g. James Smith" required>
-
+    </div>
+    <div id="email-text">
       <label id="email-label" for="email">What is your email address?</label>
         <input type="email" id="email" placeholder="e.g. example@gmail.com" required>
-
+    </div>
+    <div id="number-text">
       <label id="number-label" for="number">How many computers do you have?</label>
         <input type="number" id="number" placeholder="0-100" min="0" max="100">
-
-      <label id="brand-label" for="dropdown">Select your favourite computer form:</label>
-        <select name="computer types" id="dropdown"><option value="Desktop">Desktop</option><option value="Laptop">Laptop</option>
+    </div>
+      <label id="brand-label" for="dropdown">Select your favourite personal computer type:</label>
+        <select name="computer types" id="dropdown"><option value="Desktop">Desktop</option><option value="Laptop">Laptop</option><option value="tablet">2 in 1 tablet</option><option value="other">Other</option>
 <div id="computer-age">
       <label for="0-1">
         <input id="0-1" type="radio" name="computer-age" value="0-1">0-1 year old
