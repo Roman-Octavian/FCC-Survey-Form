@@ -2,78 +2,118 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1 id="title">Computer Survey Form</h1>
-    <p id="description">Please complete this form to help us display more relevant personalized advertisements on your feed.</p>
+    <p id="description">Please complete this survey to help us improve our services</p>
+
     <form id="survey-form">
-    <div id="name-text">
-      <label id="name-label" for="name">What is your name?</label>
+
+      <div id="name-text">
+        <label id="name-label" for="name">Name:</label>
+        <div>
         <input type="text" id="name" placeholder="e.g. James Smith" required>
-    </div>
-    <div id="email-text">
-      <label id="email-label" for="email">What is your email address?</label>
+        </div>
+      </div>
+
+      <div id="email-text">
+        <label id="email-label" for="email">Email Address:</label>
+        <div>
         <input type="email" id="email" placeholder="e.g. example@gmail.com" required>
-    </div>
-    <div id="number-text">
-      <label id="number-label" for="number">How many computers do you have?</label>
+        </div>
+      </div>
+
+      <div id="number-text">
+        <label id="number-label" for="number">Age:</label>
+        <div>
         <input type="number" id="number" placeholder="0-100" min="0" max="100">
+        </div>
+      </div>
+
+      <div id="dropdown-types">
+        <label id="brand-label" for="dropdown">Select your favourite PC type:</label>
+      <div id="options">
+        <select name="computer types" id="dropdown"><option value="Desktop">Desktop</option><option value="Laptop">Laptop</option><option value="tablet">2 in 1 tablet</option><option value="other">Other</option></select>
+      </div>
+      </div>
+
+      <fieldset>
+        <legend>Please select the age of your main PC</legend>
+        <div>
+          <input id="new" type="radio" name="computer-age" value="new">
+          <label for="new">0-1 year old</label>
+
+          <input id="not-new" type="radio" name="computer-age" value="notnew">
+          <label for="not-new">1-2 years old</label>
+
+          <input id="kinda-old" type="radio" name="computer-age" value="kindaold">
+          <label for="kinda-old">2-3 years old</label>
+
+          <input id="old" type="radio" name="computer-age" value="old">
+          <label for="old">3-5 years old</label>
+
+          <input id="older" type="radio" name="computer-age" value="older">
+          <label for="older">>5 years old</label>
+        </div>
+      </fieldset>
+
+    <div id="owned-brands">
+      <fieldset>
+        <legend>Please select PC brands that you have used</legend>
+        <div>
+          <label for="acer">
+            <input id="acer" type="checkbox" name="owned-brands" value="yes">Acer
+          </label>
+
+          <label for="apple">
+            <input id="apple" type="checkbox" name="owned-brands" value="yes">Apple
+          </label>
+
+          <label for="asus">
+            <input id="asus" type="checkbox" name="owned-brands" value="yes">Asus
+          </label>
+
+          <label for="dell">
+            <input id="dell" type="checkbox" name="owned-brands" value="yes">Dell
+          </label>
+
+          <label for="hp">
+            <input id="hp" type="checkbox" name="owned-brands" value="yes">HP
+          </label>
+
+          <label for="lenovo">
+            <input id="lenovo" type="checkbox" name="owned-brands" value="yes">Lenovo
+          </label>
+
+          <label for="toshiba">
+            <input id="toshiba" type="checkbox" name="owned-brands" value="yes">Toshiba
+          </label>
+
+          <label for="custom">
+            <input id="custom" type="checkbox" name="owned-brands" value="yes">Custom Built
+          </label>
+
+          <label for="other">
+            <input id="other" type="checkbox" name="owned-brands" value="yes">Other
+          </label>
+        </div>
+      </fieldset>
     </div>
-      <label id="brand-label" for="dropdown">Select your favourite personal computer type:</label>
-        <select name="computer types" id="dropdown"><option value="Desktop">Desktop</option><option value="Laptop">Laptop</option><option value="tablet">2 in 1 tablet</option><option value="other">Other</option>
-<div id="computer-age">
-      <label for="0-1">
-        <input id="0-1" type="radio" name="computer-age" value="0-1">0-1 year old
-      </label>
 
-      <label for="1-2">
-        <input id="1-2" type="radio" name="computer-age" value="1-2">1-2 years old
-      </label>
-
-      <label for="2-3">
-        <input id="2-3" type="radio" name="computer-age" value="2-3">2-3 years old
-      </label>
-
-      <label for="3-5">
-        <input id="3-5" type="radio" name="computer-age" value="3-5">3-5 years old
-      </label>
-
-      <label for="older">
-        <input id="older" type="radio" name="computer-age" value="older">older than 5 years
-      </label>
-</div>
-<div id="owned-brands"
-      <label for="apple">
-        <input id="apple" type="checkbox" name="owned-brands" value="yes">Apple
-      </label>
-
-      <label for="lenovo">
-        <input id="lenovo" type="checkbox" name="owned-brands" value="yes">Lenovo
-      </label>
-
-      <label for="hp">
-        <input id="hp" type="checkbox" name="owned-brands" value="yes">HP
-      </label>
-
-      <label for="dell">
-        <input id="dell" type="checkbox" name="owned-brands" value="yes">Dell
-      </label>
-
-      <label for="asus">
-        <input id="asus" type="checkbox" name="owned-brands" value="yes">Asus
-      </label>
-
-      <label for="other">
-        <input id="other" type="checkbox" name="owned-brands" value="yes">Other
-      </label>
-</div>
-<div id="textarea-form">
-      <label for="textarea">Additional comments:</label>
+    <div id="textarea-form">
+      <div>
+        <label for="textarea">Additional comments:</label>
+      </div>
         <textarea id="textarea" name="textarea" rows="10" cols="20" placeholder="e.g. I like this form!"></textarea>
-</div>
-      <button type=submit id="submit">Press this button to submit the form.</button>
+      </div>
+
+    <div id="button">
+      <button type=submit id="submit">SUBMIT FORM</button>
+    </div>
+
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

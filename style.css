@@ -6,27 +6,90 @@ body {
   background-blend-mode: overlay;
   background-color: #F1F1F1;
 }
-form {
-  background-color: rgba(27, 27, 48, 0.4);
-  text-align: center;
-  line-height: 20px;
+
+#survey-form {
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  border: 3px solid white;
+  font-size: 1.1em;
   color: white;
   margin-left: 20%;
   margin-right: 20%;
-  padding: 20px 20px 20px 20px;
-
+  padding: 2% 7% 5% 5%;
 }
+
 h1 {
   text-align: center;
   font-size: 5vw;
 }
+
 #description {
   text-align: center;
   font-size: 2vw;
 }
-#name-label {
+
+#name {
+  margin-top: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
+  width: 100%;
+}
+
+#name-text {
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+}
+
+#email {
+  margin-top: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
+  width: 100%;
+}
+
+#email-text {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+#number {
+  margin-top: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
+  width: 100%;
+}
+
+#number-text {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+#dropdown-types {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+#dropdown {
+  margin-top: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
+  width: 105%;
+}
+
+#radio {
+  margin-top: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
 
 }
-#name {
-
+fieldset {
+  margin-top: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+button {
+  margin-top: 2vw;
+  padding: 1vw 1vw 1vw 1vw;
+  margin-bottom: 2vw;
+  width: 105%;
+  border-radius: 15px;
+}
+textarea {
+  width: 105%;
 }
